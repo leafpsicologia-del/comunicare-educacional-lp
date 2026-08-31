@@ -38,22 +38,20 @@ body {
 /* Banner Superior (Hero Section) com Gradiente */
 /* Transforma o banner numa faixa fina com os elementos lado a lado */
 .hero-banner {
-    background: linear-gradient(135deg, var(--cor-primaria) 0%, var(--cor-primaria-escura) 100%);
+    background: #91C73E;
     color: var(--cor-branca);
-    padding: 15px 40px; /* Reduzimos muito o espaço em cima e embaixo (15px) */
-    
-    /* O SEGREDO ESTÁ AQUI: Flexbox para colocar logo e texto lado a lado */
+    padding: 5px 40px; /* Reduzido de 15px para 5px para dar folga à logo */
     display: flex;
-    align-items: center; /* Centraliza a logo e o texto verticalmente */
-    justify-content: flex-start; /* Alinha tudo à esquerda */
-    gap: 30px; /* Dá um espaço entre a logo e os textos */
-    text-align: left; /* O texto agora fica alinhado à esquerda */
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    text-align: left;
 }
 
 /* Ajusta a logo para a nova posição */
 .hero-logo {
-    max-width: 140px; /* Tamanho contido */
-    height: auto;
+    width: 200px; /* Tamanho contido */
+    height: 150px;
     margin-bottom: 0; /* Remove a margem de baixo que existia antes */
     flex-shrink: 0; /* Impede a logo de ser esmagada se a tela diminuir */
 }
